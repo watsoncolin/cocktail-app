@@ -15,6 +15,14 @@
 		68163787220E7FE200129A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68163785220E7FE200129A96 /* LaunchScreen.storyboard */; };
 		68163792220E7FE200129A96 /* cocktail_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68163791220E7FE200129A96 /* cocktail_appTests.swift */; };
 		6816379D220E7FE200129A96 /* cocktail_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6816379C220E7FE200129A96 /* cocktail_appUITests.swift */; };
+		681637AB220E83EB00129A96 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681637AA220E83EB00129A96 /* CustomTableViewCell.swift */; };
+		681637AD220E850D00129A96 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681637AC220E850D00129A96 /* Models.swift */; };
+		681637AF220E8BD300129A96 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681637AE220E8BD300129A96 /* SearchViewController.swift */; };
+		681637B1220F64E300129A96 /* drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = 681637B0220F5F7900129A96 /* drinks.json */; };
+		681637B3220F68FA00129A96 /* DrinkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681637B2220F68FA00129A96 /* DrinkDetailsViewController.swift */; };
+		681637B5220F6BE900129A96 /* DrinkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681637B4220F6BE900129A96 /* DrinkRepository.swift */; };
+		681637B7220F6EFD00129A96 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681637B6220F6EFD00129A96 /* Utilities.swift */; };
+		681637BA220FDDCC00129A96 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681637B9220FDDCC00129A96 /* Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		68163798220E7FE200129A96 /* cocktail-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cocktail-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6816379C220E7FE200129A96 /* cocktail_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocktail_appUITests.swift; sourceTree = "<group>"; };
 		6816379E220E7FE200129A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681637AA220E83EB00129A96 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		681637AC220E850D00129A96 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		681637AE220E8BD300129A96 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		681637B0220F5F7900129A96 /* drinks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drinks.json; sourceTree = "<group>"; };
+		681637B2220F68FA00129A96 /* DrinkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsViewController.swift; sourceTree = "<group>"; };
+		681637B4220F6BE900129A96 /* DrinkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRepository.swift; sourceTree = "<group>"; };
+		681637B6220F6EFD00129A96 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		681637B9220FDDCC00129A96 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +115,20 @@
 		68163778220E7FE100129A96 /* cocktail-app */ = {
 			isa = PBXGroup;
 			children = (
+				681637B8220FDDBE00129A96 /* Models */,
 				68163779220E7FE100129A96 /* AppDelegate.swift */,
 				6816377B220E7FE100129A96 /* ViewController.swift */,
 				6816377D220E7FE100129A96 /* Main.storyboard */,
+				681637AE220E8BD300129A96 /* SearchViewController.swift */,
 				68163783220E7FE200129A96 /* Assets.xcassets */,
 				68163785220E7FE200129A96 /* LaunchScreen.storyboard */,
 				68163788220E7FE200129A96 /* Info.plist */,
-				68163780220E7FE100129A96 /* cocktail_app.xcdatamodeld */,
+				681637AA220E83EB00129A96 /* CustomTableViewCell.swift */,
+				681637AC220E850D00129A96 /* Models.swift */,
+				681637B0220F5F7900129A96 /* drinks.json */,
+				681637B2220F68FA00129A96 /* DrinkDetailsViewController.swift */,
+				681637B4220F6BE900129A96 /* DrinkRepository.swift */,
+				681637B6220F6EFD00129A96 /* Utilities.swift */,
 			);
 			path = "cocktail-app";
 			sourceTree = "<group>";
@@ -126,6 +149,15 @@
 				6816379E220E7FE200129A96 /* Info.plist */,
 			);
 			path = "cocktail-appUITests";
+			sourceTree = "<group>";
+		};
+		681637B8220FDDBE00129A96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68163780220E7FE100129A96 /* cocktail_app.xcdatamodeld */,
+				681637B9220FDDCC00129A96 /* Drink.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681637B1220F64E300129A96 /* drinks.json in Resources */,
 				68163787220E7FE200129A96 /* LaunchScreen.storyboard in Resources */,
 				68163784220E7FE200129A96 /* Assets.xcassets in Resources */,
 				6816377F220E7FE100129A96 /* Main.storyboard in Resources */,
@@ -259,8 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681637B5220F6BE900129A96 /* DrinkRepository.swift in Sources */,
+				681637B3220F68FA00129A96 /* DrinkDetailsViewController.swift in Sources */,
+				681637AF220E8BD300129A96 /* SearchViewController.swift in Sources */,
 				68163782220E7FE100129A96 /* cocktail_app.xcdatamodeld in Sources */,
 				6816377C220E7FE100129A96 /* ViewController.swift in Sources */,
+				681637AB220E83EB00129A96 /* CustomTableViewCell.swift in Sources */,
+				681637B7220F6EFD00129A96 /* Utilities.swift in Sources */,
+				681637AD220E850D00129A96 /* Models.swift in Sources */,
+				681637BA220FDDCC00129A96 /* Drink.swift in Sources */,
 				6816377A220E7FE100129A96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

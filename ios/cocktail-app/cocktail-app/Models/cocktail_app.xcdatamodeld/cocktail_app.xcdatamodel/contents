@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Drink" representedClassName=".Drink" syncable="YES">
+        <attribute name="drinkDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ingredient" inverseName="drink" inverseEntity="Ingredient" syncable="YES"/>
+        <relationship name="sections" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Section" inverseName="drink" inverseEntity="Section" syncable="YES"/>
+    </entity>
+    <entity name="Ingredient" representedClassName=".Ingredient" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="drink" maxCount="1" deletionRule="Nullify" destinationEntity="Drink" inverseName="ingredients" inverseEntity="Drink" syncable="YES"/>
+    </entity>
+    <entity name="Section" representedClassName=".Section" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="drink" maxCount="1" deletionRule="Nullify" destinationEntity="Drink" inverseName="sections" inverseEntity="Drink" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Drink" positionX="-409.36328125" positionY="34.4609375" width="128" height="135"/>
+        <element name="Ingredient" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="Section" positionX="-216" positionY="90" width="128" height="90"/>
+    </elements>
+</model>

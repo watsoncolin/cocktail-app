@@ -1,0 +1,29 @@
+{
+    "drinks":
+    [
+        {
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Alexander_(cocktail)",
+            "title" : "Alexander",
+            "description": "The Alexander is a cocktail consisting of some form of alcohol, Cocoa Liqueur (Crème de cacao), and cream.",
+            "imageUrl" :"https://upload.wikimedia.org/wikipedia/commons/b/b6/Alexander_Cocktail.png",
+            "ingredients" : [
+                {
+                    "name": "cognac",
+                    "amount" : "1oz"
+                },{
+                    "name": "brown crème de cacao",
+                    "amount" : "1oz"
+                },{
+                    "name": "light cream",
+                    "amount" : "1oz"
+                }
+            ],
+            "sections": [
+                {
+                    "title": "Earliest citations",
+                    "content" : "<dl><dt><i>Jack's Manual on The Vintage &amp; Production, Care &amp; Handling of Wines, Liquors &amp;c.</i>, by Jacob Abraham Grohusko, 1910</dt></dl>                <p>Alexander Cocktail</p><ul><li>75% rye whisky</li><li>25% Benedictine</li>                <li>1 piece of ice</li></ul><p>Twist of orange peel. Stir and serve.</p>                <dl><dt><i>Recipes for Mixed Drinks</i>, by Hugo Ensslin, 1915</dt></dl>                <p>Alexander Cocktail</p><ul><li>1/3 El Bart gin</li><li>1/3 White Crème de Cacao</li>                <li>1/3 Sweet Cream</li></ul><p>Shake well in a mixing glass with cracked ice, strain and serve.</p>"
+                }
+            ]
+        }
+    ]
+}
